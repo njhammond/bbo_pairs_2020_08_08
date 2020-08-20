@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <script type="text/javascript">
+    function get_tz()
+    {
+      var now = new Date()
+      document.tz_form.offset.value = now.getTimezoneOffset()
+      document.tz_form.submit()
+    }
+  </script>
+  <object><noscript>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;  Javascript support is needed for this page (to get your local timezone).<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;  Your browser either has no Javascript support,
+ or has such support disabled.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;  As an alternative, click <a href="http://www.bridgebase.com/myhands/hands.php?offset=0">here</a> to continue.<br />
+  All times will be GMT.</p>  </noscript></object>
+</head>
+  <body onload='get_tz()'>
+   <form name="tz_form" action="/myhands/hands.php?traveller=2942-1596928500-12933625" method="post">
+      <input type='hidden' name='offset' />
+    </form>
+  </body>
+</html>
